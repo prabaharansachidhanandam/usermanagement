@@ -12,7 +12,6 @@ interface User {
   mobile:string
 }
 
-
 export async function POST(req: Request, res: Response) {
   try {
     const data  = await req.json();

@@ -10,7 +10,7 @@ const dbconn = mysql.createConnection({
     connectTimeout: 30000,
     ssl: {
         //rejectUnauthorized: false
-        ca:  fs.readFileSync('/Applications/MAMP/htdocs/Learning/Nextjs/authentication/authentication/src/app/db/DigiCertGlobalRootCA.crt.pem')
+        ca:  fs.readFileSync('DigiCertGlobalRootCA.crt.pem')
     }
 });
 
